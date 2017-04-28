@@ -4,7 +4,7 @@ Private Sub Form_BeforeUpdate(Cancel As Integer)
 ' Will need to change Control Field to match each use
     If IsNull(Me.ClientMnemonicID) Then
         MsgBox "You must enter a New Blacklisted Code System.", vbCritical, "Data entry error..."
-        DoCmd.GoToControl "ClientMnemonicID"
+        DoCmd.GoToControl "BlacklistedCodeSystem"
 
         Cancel = True
     End If
